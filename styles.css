@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Raleway:wght@100;200;300;400&display=swap');
+
+/* font-family: 'Calligraffitti', cursive;
+font-family: 'Raleway', sans-serif */
+
+:root {
+  /*  --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    */
+
+    --font-family-sans-serif:'Raleway', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+   --font-family-cursive: "Calligraffitti", cursive;
+
+   --font-family-text: var(--font-family-sans-serif);
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+
+}
+
+/*----navigation bar------*/
+.site-nav {
+    background-color: rgb(47, 41, 105);
+    border-bottom: rgb(33, 28, 94) solid 4px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.nav-item {
+    font-size: 18px;
+}
+
+
+/*------banner--------*/
+
+.page-section-title {
+    font-size: 60px;
+    line-height: 1em;
+}
+
+.page-section-text {
+    font-size: 25px;
+    text-align: left;
+}
+
+.layout-hero {
+    background-image: url('images/pencils_3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-size: cover;
+    border-bottom: rgb(33, 28, 94) solid 4px;
+    
+}
+
+@media screen and (max-width:500px) {
+    .page-section-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .page-section-text {
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .copywrite {
+        text-align: center;
+    }
+}
+
+
+
+/*-------buttons-----------*/
+.multicolumn {
+    background-color: rgb(47, 41, 105);
+    color: white;
+    min-height: 200px;
+    border-bottom: rgb(33, 28, 94) solid 4px;
+   
+}
+
+.multicolumn h2 {
+    font-size: 45px;
+}
+
+.site-link a {
+    color: white;
+
+}
+
+.site-link a:hover {
+    text-decoration: none;
+    color: rgb(163, 162, 162);
+}
+
+.site-link a h2:hover {
+    font-size: 50px;
+}
+
+
+/*-----------about me--------------*/
+.bio {
+    background-color: rgb(251, 251, 253);
+  
+}
+
+.bio h2 {
+    font-size: 50px;
+    color: rgb(33, 28, 94);
+}
+
+
+.bio .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio-info {
+    max-width: 50%;
+}
+
+
+@media screen and (max-width: 999px) {
+    .bio .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .bio img {
+        max-width: 100%;
+       margin-left: auto;
+    }
+
+    .bio-info {
+        max-width: 100%;
+    }
+
+}
+
+/*------portfolio header---------*/
+
+
+.portfolio-page-section {
+    background: rgb(47, 41, 105);
+    color: white;
+    border-bottom: rgb(33, 28, 94) solid 4px;
+    border-top: rgb(33, 28, 94) solid 4px;
+}
+
+.portfolio-page-section h2 {
+    font-size: 50px;
+}
+
+/*-----graphic design photos-----*/
+
+
+h3 {
+    font-size: 45px;
+    color: rgb(33, 28, 94);
+    
+}
+
+
+.graphic-designs {
+    background-color:rgb(251, 251, 253);
+  
+}
+
+.logo-design {
+    background-color: rgb(47, 41, 105);
+    border-top: rgb(33, 28, 94) solid 4px;
+}
+
+
+.logo-img {
+    max-width: 100%;
+   
+}
+
+
+.logo-design .button:hover {
+    background-color: silver;
+}
+
+
+.web-img {
+    max-width: 100%;
+    
+}
+
+.web-design {
+    background-color: rgb(251, 251, 253);
+    border-bottom: rgb(33, 28, 94) solid 4px;
+}
+
+.web-design .button {
+    color:rgb(47, 41, 105)
+    font-size: 25px;
+}
+
+.web-design .button:hover {
+ font-weight: 800;
+ font-size: 27px;
+}
+
+
+@media screen and (max-width: 999px) {
+    .web-design .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+   
+
+}  
+
+
+/*---footer----*/
+
+.contact {
+    background: rgb(47, 41, 105);
+}
+
+.contact .row {
+    justify-content: space-between;
+}
+
+ .contact .button {
+    text-decoration: none;
+    background-color: rgb(251, 251, 253);
+    color:rgb(33, 28, 94);
+    border-radius: 5px;
+}
+
+.contact .button:hover {
+    background-color: silver;
+}
+
+@media screen and (max-width: 500px){
+    .contact .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+     
+/*-------photo hover effect--------*/
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > * {
+        margin: 5px;
+    }
+}
+
+.media {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+  }
+  
+  .layer {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10px;
+    height: 70%;
+    background: #FFF;
+    color: #151E3F;
+    transition: all 0.9s ease;
+    p {
+      transition: all 0.9s ease;
+      transform: scale(0.1)
+    }
+  }
+  
+  .media:hover .layer {
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+    p {
+      transform: scale(1);
+      transition: all 0.9s ease;
+    }
+  }
+
+  
+  
